@@ -84,7 +84,7 @@
   </div>
 
   <div class="card bg-base-200 border border-white/5 md:col-span-2">
-    <div class="card-body flex-row items-center gap-6">
+    <div class="card-body flex-col md:flex-row items-center gap-6">
       <div class="flex-1">
         <h2
           class="card-title text-accent font-mono uppercase text-sm tracking-widest"

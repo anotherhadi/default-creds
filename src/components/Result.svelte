@@ -61,7 +61,7 @@
         </div>
       </div>
 
-      <div class="min-w-0 flex-1">
+      <div class="min-w-0 flex-1 flex flex-col gap-2">
         <div class="flex items-center gap-2">
           <span
             class="text-[10px] font-black uppercase tracking-widest opacity-50 truncate"
