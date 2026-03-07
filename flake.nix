@@ -113,6 +113,7 @@
 
           serviceConfig = {
             ExecStart = "${self.packages.${system}.default}/bin/default-creds";
+            WorkingDirectory = "${self.packages.${system}.default}/share/default-creds";
             Restart = "on-failure";
             RestartSec = "5s";
 
