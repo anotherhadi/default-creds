@@ -1,0 +1,12 @@
+name: Intex
+entries:
+- name: organizer
+  version: all
+  user: ''
+  pass: ''
+  comment: 'Access: Multi | Privs: Admin'
+- name: organizer
+  version: all
+  user: ''
+  pass: ''
+  comment: 'Access: Multi | Privs: Admin'

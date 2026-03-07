@@ -1,0 +1,7 @@
+name: B-FOCuS
+entries:
+- name: B-FOCuS 270/400
+  version: all
+  user: root
+  pass: '1234'
+  comment: 'Privs: admin'

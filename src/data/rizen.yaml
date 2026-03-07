@@ -1,0 +1,7 @@
+name: Rizen
+entries:
+- name: WebGUI
+  version: all
+  user: Admin
+  pass: 123qwe
+  comment: 'Privs: Administrator | http://freshmeat.net/projects/webgui/'

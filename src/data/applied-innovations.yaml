@@ -1,0 +1,7 @@
+name: Applied Innovations
+entries:
+- name: AIscout
+  version: all
+  user: scout
+  pass: scout
+  comment: 'Access: Multi | Privs: supervisor'

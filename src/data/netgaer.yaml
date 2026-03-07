@@ -1,0 +1,7 @@
+name: Netgaer
+entries:
+- name: RH328
+  version: all
+  user: ''
+  pass: '1234'
+  comment: ''

@@ -1,0 +1,7 @@
+name: Northern
+entries:
+- name: IP Camera system
+  version: all
+  user: admin
+  pass: '12345'
+  comment: 'Access: HTTP'

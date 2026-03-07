@@ -1,0 +1,7 @@
+name: Daytek
+entries:
+- name: PC BIOS
+  version: all
+  user: ''
+  pass: Daytec
+  comment: 'Access: Console | Privs: Admin'

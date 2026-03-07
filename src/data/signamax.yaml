@@ -1,0 +1,7 @@
+name: Signamax
+entries:
+- name: 065-7726S
+  version: all
+  user: admin
+  pass: admin
+  comment: 'Access: Multi | Privs: Admin | Switch'

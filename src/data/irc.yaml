@@ -1,0 +1,7 @@
+name: IRC
+entries:
+- name: IRC Daemon
+  version: all
+  user: ''
+  pass: FOOBAR
+  comment: 'Access: IRC | Privs: Acess'

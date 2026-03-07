@@ -1,0 +1,7 @@
+name: soho
+entries:
+- name: nbg800
+  version: unknown
+  user: admin
+  pass: '1234'
+  comment: ''

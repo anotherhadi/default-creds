@@ -1,0 +1,7 @@
+name: Ericsson ACC
+entries:
+- name: Tigris Platform
+  version: All
+  user: public
+  pass: ''
+  comment: 'Access: Multi | Privs: Guest'

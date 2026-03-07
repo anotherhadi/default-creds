@@ -1,0 +1,7 @@
+name: 2Wire Inc.
+entries:
+- name: Wireless Routers
+  version: all
+  user: http
+  pass: ''
+  comment: 'Privs: Administrator'

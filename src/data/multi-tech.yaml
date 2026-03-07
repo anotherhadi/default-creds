@@ -1,0 +1,7 @@
+name: Multi-Tech
+entries:
+- name: ProxyServer
+  version: all
+  user: supervisor
+  pass: ''
+  comment: 'Access: Multi | Privs: Admin'

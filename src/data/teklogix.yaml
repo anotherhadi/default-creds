@@ -1,0 +1,7 @@
+name: Teklogix
+entries:
+- name: Accesspoint
+  version: all
+  user: Administrator
+  pass: ''
+  comment: 'Access: Multi | Privs: Admin'

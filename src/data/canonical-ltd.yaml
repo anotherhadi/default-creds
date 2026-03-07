@@ -1,0 +1,7 @@
+name: Canonical Ltd.
+entries:
+- name: Ubuntu
+  version: all
+  user: ubuntu
+  pass: ubuntu
+  comment: 'Privs: Admin'

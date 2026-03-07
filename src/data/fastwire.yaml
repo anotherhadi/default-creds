@@ -1,0 +1,12 @@
+name: Fastwire
+entries:
+- name: Fastwire Bank Transfer
+  version: all
+  user: fastwire
+  pass: fw
+  comment: ''
+- name: Fastwire Bank Transfer
+  version: all
+  user: fastwire
+  pass: fw
+  comment: ''

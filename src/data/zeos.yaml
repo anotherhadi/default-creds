@@ -1,0 +1,7 @@
+name: ZEOS
+entries:
+- name: PC BIOS
+  version: all
+  user: ''
+  pass: zeosx
+  comment: 'Access: Console | Privs: Admin'

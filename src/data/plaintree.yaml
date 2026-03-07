@@ -1,0 +1,7 @@
+name: PlainTree
+entries:
+- name: Waveswitch 100
+  version: all
+  user: ''
+  pass: default.password
+  comment: 'Privs: Admin'

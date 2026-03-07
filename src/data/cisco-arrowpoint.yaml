@@ -1,0 +1,7 @@
+name: Cisco-Arrowpoint
+entries:
+- name: Arrowpoint
+  version: all
+  user: admin
+  pass: system
+  comment: 'Privs: Admin'

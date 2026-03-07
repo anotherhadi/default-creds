@@ -1,0 +1,7 @@
+name: Informix
+entries:
+- name: Database
+  version: all
+  user: informix
+  pass: informix
+  comment: ''

@@ -1,0 +1,7 @@
+name: DZS - DASAN Zhone
+entries:
+- name: ZNID-GPON-2426A-EU
+  version: S3.1.330
+  user: user
+  pass: user
+  comment: 'Access: HTTP | just for checking and tests'

@@ -1,0 +1,7 @@
+name: Addon
+entries:
+- name: GWAR3000/ARM8100
+  version: all
+  user: admin
+  pass: admin
+  comment: 'Access: HTTP | Privs: Admin | http://www.addon-tech.com'

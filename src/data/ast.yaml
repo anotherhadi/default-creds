@@ -1,0 +1,12 @@
+name: AST
+entries:
+- name: PC BIOS
+  version: all
+  user: ''
+  pass: SnuFG5
+  comment: 'Access: Console | Privs: Admin'
+- name: PC BIOS
+  version: all
+  user: ''
+  pass: SnuFG5
+  comment: 'Access: Console | Privs: Administrator'

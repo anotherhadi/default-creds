@@ -1,0 +1,7 @@
+name: JDE
+entries:
+- name: WorldVision/OneWorld
+  version: all
+  user: PRODDTA
+  pass: PRODDTA
+  comment: 'Access: Multi | Privs: Admin | Owner of database tables and objects'

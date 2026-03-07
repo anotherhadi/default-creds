@@ -1,0 +1,7 @@
+name: IMAI
+entries:
+- name: Traffic Shaper
+  version: TS-1012
+  user: ''
+  pass: ''
+  comment: 'Access: HTTP | Privs: Admin | default IP 1.2.3.4'

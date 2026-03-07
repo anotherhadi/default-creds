@@ -1,0 +1,7 @@
+name: IPX-DDK
+entries:
+- name: IP Camera system
+  version: all
+  user: root
+  pass: Admi<blank>dmin
+  comment: 'Access: HTTP'

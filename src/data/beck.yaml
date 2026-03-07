@@ -1,0 +1,12 @@
+name: Beck
+entries:
+- name: IPC@Chip
+  version: all
+  user: anonymous
+  pass: ''
+  comment: 'Access: HTTP | Privs: User'
+- name: IPC@Chip
+  version: all
+  user: tel
+  pass: ''
+  comment: 'Access: HTTP | Privs: User'

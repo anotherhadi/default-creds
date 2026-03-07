@@ -1,0 +1,7 @@
+name: CNB
+entries:
+- name: IP Camera system
+  version: all
+  user: root
+  pass: admin
+  comment: 'Access: HTTP'

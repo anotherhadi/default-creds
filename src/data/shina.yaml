@@ -1,0 +1,7 @@
+name: Shina
+entries:
+- name: LANRover
+  version: all
+  user: root
+  pass: ''
+  comment: 'Privs: Admin'

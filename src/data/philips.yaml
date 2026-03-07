@@ -1,0 +1,7 @@
+name: Philips
+entries:
+- name: Praesideo PA System
+  version: Any
+  user: admin
+  pass: admin
+  comment: 'Access: Multi | Privs: Admin'

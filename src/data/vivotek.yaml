@@ -1,0 +1,7 @@
+name: Vivotek
+entries:
+- name: IP Camera system
+  version: all
+  user: root
+  pass: ''
+  comment: 'Access: HTTP'

@@ -1,0 +1,12 @@
+name: Allot
+entries:
+- name: Netenforcer
+  version: all
+  user: admin
+  pass: allot
+  comment: 'Privs: Administrator'
+- name: Netenforcer
+  version: all
+  user: root
+  pass: bagabu
+  comment: 'Privs: Administrator'

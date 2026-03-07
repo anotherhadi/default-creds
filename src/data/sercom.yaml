@@ -1,0 +1,12 @@
+name: Sercom
+entries:
+- name: IP806GA
+  version: all
+  user: admin
+  pass: admin
+  comment: 'Access: HTTP | Privs: Admin'
+- name: IP806GB
+  version: all
+  user: admin
+  pass: admin
+  comment: 'Access: HTTP | Privs: Admin'

@@ -1,0 +1,7 @@
+name: winwork
+entries:
+- name: iso sistemi
+  version: all
+  user: operator
+  pass: ''
+  comment: 'Access: Multi | Privs: Admin'

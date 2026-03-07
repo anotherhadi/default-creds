@@ -1,0 +1,7 @@
+name: VMware Inc.
+entries:
+- name: RabbitMQ
+  version: all
+  user: guest
+  pass: guest
+  comment: 'Access: HTTP | Privs: Administrator | https://www.rabbitmq.com/access-control.html#default-state'

@@ -1,0 +1,12 @@
+name: Megastar
+entries:
+- name: BIOS
+  version: all
+  user: ''
+  pass: star
+  comment: 'Access: Console | Privs: Admin'
+- name: PC BIOS
+  version: all
+  user: ''
+  pass: star
+  comment: 'Access: Console | Privs: Admin'

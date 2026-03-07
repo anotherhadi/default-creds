@@ -1,0 +1,7 @@
+name: UDP
+entries:
+- name: IP Camera system
+  version: all
+  user: root
+  pass: unknown
+  comment: 'Access: HTTP'

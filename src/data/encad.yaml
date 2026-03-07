@@ -1,0 +1,7 @@
+name: enCAD
+entries:
+- name: XPO
+  version: all
+  user: ''
+  pass: ''
+  comment: 'Access: Multi | Privs: Admin'

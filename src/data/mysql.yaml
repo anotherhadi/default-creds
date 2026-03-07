@@ -1,0 +1,7 @@
+name: MySQL
+entries:
+- name: MySQL
+  version: all
+  user: root
+  pass: ''
+  comment: 'Access: Any | Privs: Admin'

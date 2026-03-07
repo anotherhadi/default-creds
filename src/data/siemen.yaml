@@ -1,0 +1,7 @@
+name: siemen
+entries:
+- name: speedstream 5400
+  version: 059-e440-a02
+  user: admin
+  pass: ''
+  comment: 'Access: HTTP | Privs: Admin'

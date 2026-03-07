@@ -1,0 +1,7 @@
+name: Patton
+entries:
+- name: RAS
+  version: '2'
+  user: monitor
+  pass: monitor
+  comment: ''

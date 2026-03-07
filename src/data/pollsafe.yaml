@@ -1,0 +1,7 @@
+name: Pollsafe
+entries:
+- name: Pollsafe
+  version: all
+  user: SMDR
+  pass: SECONDARY
+  comment: 'Access: MODEM'

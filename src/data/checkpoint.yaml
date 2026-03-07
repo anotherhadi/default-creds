@@ -1,0 +1,7 @@
+name: Checkpoint
+entries:
+- name: SecurePlatform
+  version: NG FP3
+  user: admin
+  pass: admin
+  comment: 'Access: Console | Privs: Admin'

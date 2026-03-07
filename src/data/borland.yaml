@@ -1,0 +1,7 @@
+name: Borland
+entries:
+- name: Interbase
+  version: Any
+  user: politcally
+  pass: correct
+  comment: 'Privs: Admin'

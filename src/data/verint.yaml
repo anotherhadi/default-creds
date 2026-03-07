@@ -1,0 +1,7 @@
+name: Verint
+entries:
+- name: IP Camera system
+  version: all
+  user: admin
+  pass: admin
+  comment: 'Access: HTTP'

@@ -1,0 +1,7 @@
+name: Tandberg Data
+entries:
+- name: DLT8000 Autoloader 10x
+  version: all
+  user: ''
+  pass: '10023'
+  comment: 'Access: Console | Privs: Maintenance'

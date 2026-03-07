@@ -1,0 +1,7 @@
+name: Google
+entries:
+- name: Urchin
+  version: ANY
+  user: admin
+  pass: urchin
+  comment: 'Access: Administrator | Privs: Admin Access'

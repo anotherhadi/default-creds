@@ -1,0 +1,7 @@
+name: infacta
+entries:
+- name: group mail
+  version: all
+  user: Administrator
+  pass: ''
+  comment: 'Access: Multi | Privs: Admin'

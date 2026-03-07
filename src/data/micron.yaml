@@ -1,0 +1,12 @@
+name: Micron
+entries:
+- name: Generic Device
+  version: bios
+  user: ''
+  pass: ''
+  comment: ''
+- name: PC BIOS
+  version: all
+  user: ''
+  pass: xyzall
+  comment: 'Access: Console | Privs: Admin'

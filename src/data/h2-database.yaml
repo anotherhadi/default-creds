@@ -1,0 +1,7 @@
+name: H2 Database
+entries:
+- name: H2
+  version: ANY
+  user: sa
+  pass: ''
+  comment: 'Access: ANY | Privs: Admin'

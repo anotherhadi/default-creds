@@ -1,0 +1,7 @@
+name: WebRamp
+entries:
+- name: 410i
+  version: all
+  user: wradmin
+  pass: tracell
+  comment: 'Privs: Admin'

@@ -1,0 +1,7 @@
+name: VideoIQ
+entries:
+- name: IP Camera system
+  version: all
+  user: supervisor
+  pass: supervisor
+  comment: 'Access: HTTP'

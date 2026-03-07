@@ -1,0 +1,7 @@
+name: M-M-O
+entries:
+- name: Webrealm
+  version: all
+  user: Administrator
+  pass: admin
+  comment: 'Access: HTTP | Privs: Admin'

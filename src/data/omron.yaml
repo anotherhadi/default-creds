@@ -1,0 +1,7 @@
+name: OMRON
+entries:
+- name: MR104FH
+  version: all
+  user: ''
+  pass: ''
+  comment: 'Access: Multi | Privs: Admin'

@@ -1,0 +1,7 @@
+name: WWWBoard
+entries:
+- name: WWWADMIN.PL
+  version: all
+  user: WebAdmin
+  pass: WebBoard
+  comment: 'Access: HTTP | Privs: Admin'

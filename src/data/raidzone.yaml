@@ -1,0 +1,7 @@
+name: Raidzone
+entries:
+- name: raid arrays
+  version: all
+  user: ''
+  pass: raidzone
+  comment: ''

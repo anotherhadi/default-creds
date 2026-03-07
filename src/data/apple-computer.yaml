@@ -1,0 +1,17 @@
+name: Apple Computer
+entries:
+- name: Airport
+  version: all
+  user: ''
+  pass: public
+  comment: 'Privs: User'
+- name: Network Assistant
+  version: all
+  user: ''
+  pass: xyzzy
+  comment: 'Privs: Administrator'
+- name: Remote Desktop
+  version: all
+  user: ''
+  pass: xyzzy
+  comment: 'Privs: Administrator'

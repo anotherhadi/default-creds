@@ -1,0 +1,7 @@
+name: cuproplus
+entries:
+- name: bus
+  version: all
+  user: ''
+  pass: ''
+  comment: 'Access: Multi | Privs: Admin'

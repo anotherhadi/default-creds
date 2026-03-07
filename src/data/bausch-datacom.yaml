@@ -1,0 +1,12 @@
+name: Bausch Datacom
+entries:
+- name: Proxima PRI ADSL PSTN Router4 Wireless
+  version: all
+  user: admin
+  pass: epicrouter
+  comment: 'Access: Multi | Privs: Admin'
+- name: Proxima PRI ADSL PSTN
+  version: all
+  user: admin
+  pass: epicrouter
+  comment: 'Access: Multi | Privs: Admin'

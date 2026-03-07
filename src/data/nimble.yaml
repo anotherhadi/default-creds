@@ -1,0 +1,12 @@
+name: Nimble
+entries:
+- name: BIOS
+  version: all
+  user: ''
+  pass: xdfk9874t3
+  comment: 'Access: Console | Privs: Admin'
+- name: PC BIOS
+  version: all
+  user: ''
+  pass: xdfk9874t3
+  comment: 'Access: Console | Privs: Admin'

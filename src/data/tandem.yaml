@@ -1,0 +1,12 @@
+name: Tandem
+entries:
+- name: TACL
+  version: all
+  user: super.super
+  pass: ''
+  comment: 'Access: Multi | Privs: Admin'
+- name: TACL
+  version: all
+  user: super.super
+  pass: master
+  comment: 'Access: Multi | Privs: Admin'

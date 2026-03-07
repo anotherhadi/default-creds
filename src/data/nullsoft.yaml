@@ -1,0 +1,12 @@
+name: Nullsoft
+entries:
+- name: Shoutcast
+  version: 1/9/2005
+  user: admin
+  pass: changeme
+  comment: 'Access: PLS | Privs: Admin'
+- name: Shoutcast
+  version: '38361'
+  user: admin
+  pass: changeme
+  comment: 'Access: PLS | Privs: Admin'

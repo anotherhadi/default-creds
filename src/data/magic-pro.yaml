@@ -1,0 +1,7 @@
+name: Magic-Pro
+entries:
+- name: PC BIOS
+  version: all
+  user: ''
+  pass: prost
+  comment: 'Access: Console | Privs: Admin'

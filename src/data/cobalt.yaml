@@ -1,0 +1,7 @@
+name: Cobalt
+entries:
+- name: RaQ * Qube*
+  version: Any
+  user: admin
+  pass: admin
+  comment: ''

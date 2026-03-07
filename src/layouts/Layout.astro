@@ -1,0 +1,65 @@
+---
+import "../styles/global.css";
+import Navbar from "../components/Nav.svelte";
+import { Search, Book, Github, User, Shield, Coffee } from "lucide-svelte";
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = "Default Creds",
+  description = "Open-source database of default credentials for pentesters and researchers. Find factory-set passwords for any device or software.",
+} = Astro.props;
+
+const myLinks = [
+  { label: "Search", href: "/", icon: Search },
+  { label: "API", href: "/api-docs", icon: Book },
+  {
+    label: "More",
+    children: [
+      {
+        label: "Source code",
+        href: "https://github.com/anotherhadi/default-creds",
+        icon: Github,
+      },
+      {
+        label: "Passwords list",
+        href: "https://github.com/anotherhadi/default-creds/blob/main/src/data",
+        icon: Shield,
+      },
+      { label: "About me", href: "https://hadi.diy", icon: User },
+    ],
+  },
+];
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>
+      {title === "Default Creds" ? title : `${title} | Default Creds`}
+    </title>
+    <meta name="description" content={description} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+  </head>
+  <body class="bg-base-100 min-h-screen">
+    <Navbar title="Default Creds" navLinks={myLinks} client:load>
+      <a
+        href="https://ko-fi.com/anotherhadi"
+        slot="action"
+        target="_blank"
+        class="btn btn-primary"><Coffee class="size-5" /> Support me</a
+      >
+    </Navbar>
+    <div class="m-auto max-w-5xl py-10 px-10 animate-fade-in">
+      <slot />
+    </div>
+  </body>
+</html>

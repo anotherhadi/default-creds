@@ -1,0 +1,7 @@
+name: ACC
+entries:
+- name: Congo/Amazon/Tigris
+  version: All
+  user: netman
+  pass: netman
+  comment: 'Access: Multi'

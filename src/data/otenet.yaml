@@ -1,0 +1,7 @@
+name: Otenet
+entries:
+- name: otenet
+  version: all
+  user: ''
+  pass: ''
+  comment: 'Access: Telnet | Privs: User'

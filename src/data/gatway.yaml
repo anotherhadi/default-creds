@@ -1,0 +1,7 @@
+name: gatway
+entries:
+- name: solo9100
+  version: win95
+  user: ''
+  pass: ''
+  comment: ''

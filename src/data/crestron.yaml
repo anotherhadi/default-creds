@@ -1,0 +1,22 @@
+name: Crestron
+entries:
+- name: AM-100
+  version: all
+  user: admin
+  pass: admin
+  comment: 'Access: HTTP'
+- name: DM-NVX-3XX
+  version: all
+  user: admin
+  pass: admin
+  comment: 'Access: HTTP'
+- name: DM-XIO-DIR-XX
+  version: all
+  user: admin
+  pass: admin
+  comment: 'Access: HTTP'
+- name: Mercury
+  version: all
+  user: admin
+  pass: admin
+  comment: 'Access: HTTP'

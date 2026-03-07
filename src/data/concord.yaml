@@ -1,0 +1,7 @@
+name: Concord
+entries:
+- name: PC BIOS
+  version: all
+  user: ''
+  pass: last
+  comment: 'Privs: Admin'

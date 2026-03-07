@@ -1,0 +1,7 @@
+name: Interbase
+entries:
+- name: Interbase Database Server
+  version: All
+  user: SYSDBA
+  pass: masterkey
+  comment: 'Access: Multi | Privs: Admin'

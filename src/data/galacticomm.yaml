@@ -1,0 +1,7 @@
+name: Galacticomm
+entries:
+- name: Major BBS
+  version: all
+  user: Sysop
+  pass: Sysop
+  comment: 'Access: Multi | Privs: Admin'

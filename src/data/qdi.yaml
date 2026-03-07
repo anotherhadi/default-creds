@@ -1,0 +1,7 @@
+name: QDI
+entries:
+- name: PC BIOS
+  version: all
+  user: ''
+  pass: QDI
+  comment: 'Access: Console | Privs: Admin'

@@ -1,0 +1,7 @@
+name: Aladdin
+entries:
+- name: eSafe Appliance
+  version: all
+  user: root
+  pass: kn1TG7psLu
+  comment: 'Access: Console/SSH | Privs: root'

@@ -1,0 +1,7 @@
+name: Siemens Pro C5
+entries:
+- name: Siemens
+  version: all
+  user: ''
+  pass: ''
+  comment: 'Access: Multi | Privs: Admin'

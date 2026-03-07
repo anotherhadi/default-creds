@@ -1,0 +1,12 @@
+name: Freetech
+entries:
+- name: BIOS
+  version: all
+  user: ''
+  pass: Posterie
+  comment: 'Access: Console | Privs: Admin'
+- name: PC BIOS
+  version: all
+  user: ''
+  pass: Posterie
+  comment: 'Access: Console | Privs: Admin'

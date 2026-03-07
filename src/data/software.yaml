@@ -1,0 +1,7 @@
+name: Software
+entries:
+- name: Generic Device
+  version: all
+  user: ''
+  pass: ''
+  comment: EVMAdminGuide.pdf

@@ -1,0 +1,7 @@
+name: JioFi
+entries:
+- name: Web UI
+  version: ANY
+  user: administrator
+  pass: administrator
+  comment: 'Access: HTTP | Privs: Administrator | https://jiofilocalhtml.gen.in/'

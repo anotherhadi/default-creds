@@ -1,0 +1,7 @@
+name: Epox
+entries:
+- name: PC BIOS
+  version: all
+  user: ''
+  pass: central
+  comment: 'Access: Console | Privs: Admin'

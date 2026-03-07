@@ -1,0 +1,17 @@
+name: Broadlogic
+entries:
+- name: XLT router
+  version: all
+  user: webadmin
+  pass: webadmin
+  comment: 'Access: HTTP | Privs: Admin'
+- name: XLT router
+  version: all
+  user: admin
+  pass: admin
+  comment: 'Access: Telnet | Privs: Admin'
+- name: XLT router
+  version: all
+  user: installer
+  pass: installer
+  comment: 'Access: Telnet | Privs: Admin'

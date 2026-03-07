@@ -1,0 +1,7 @@
+name: GVC
+entries:
+- name: e800/rb4
+  version: all
+  user: Administrator
+  pass: admin
+  comment: 'Access: HTTP | Privs: Admin'

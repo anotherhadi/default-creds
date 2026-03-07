@@ -1,0 +1,7 @@
+name: Reda
+entries:
+- name: Generic Device
+  version: all
+  user: ''
+  pass: ''
+  comment: 'Access: HTTP | Privs: User'

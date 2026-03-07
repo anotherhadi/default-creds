@@ -1,0 +1,7 @@
+name: Zeus
+entries:
+- name: Zeus Admin Server
+  version: 4.1r2
+  user: admin
+  pass: ''
+  comment: 'Access: HTTP'

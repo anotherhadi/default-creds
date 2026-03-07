@@ -1,0 +1,12 @@
+name: Amptron
+entries:
+- name: PC BIOS
+  version: all
+  user: ''
+  pass: Polrty
+  comment: 'Access: Console | Privs: Admin'
+- name: PC BIOS
+  version: all
+  user: ''
+  pass: Polrty
+  comment: 'Access: Console | Privs: Administrator'

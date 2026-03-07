@@ -1,0 +1,7 @@
+name: Psionteklogix
+entries:
+- name: '9160'
+  version: '1'
+  user: admin
+  pass: admin
+  comment: 'Access: HTTP | Privs: Admin'

@@ -1,0 +1,12 @@
+name: Semaphore
+entries:
+- name: PICK O/S
+  version: all
+  user: DESQUETOP
+  pass: ''
+  comment: ''
+- name: PICK O/S
+  version: all
+  user: DSA
+  pass: ''
+  comment: ''

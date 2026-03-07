@@ -1,0 +1,7 @@
+name: Nanoteq
+entries:
+- name: NetSeq firewall
+  version: '*'
+  user: admin
+  pass: NetSeq
+  comment: ''

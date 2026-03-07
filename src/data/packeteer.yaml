@@ -1,0 +1,7 @@
+name: Packeteer
+entries:
+- name: Packetshaper
+  version: all
+  user: ''
+  pass: touchpwd=
+  comment: 'Access: Console | Privs: touch | Resets ‘touch’ password.'

@@ -1,0 +1,7 @@
+name: Iwill
+entries:
+- name: PC BIOS
+  version: all
+  user: ''
+  pass: iwill
+  comment: 'Access: Console | Privs: Admin'

@@ -1,0 +1,7 @@
+name: Cellit
+entries:
+- name: CCPro
+  version: all
+  user: cellit
+  pass: cellit
+  comment: 'Access: Multi | Privs: Admin'

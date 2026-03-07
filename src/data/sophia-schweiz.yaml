@@ -1,0 +1,12 @@
+name: SOPHIA (Schweiz)
+entries:
+- name: Protector
+  version: all
+  user: admin
+  pass: Protector
+  comment: 'Access: HTTPS | Privs: Admin'
+- name: Protector
+  version: all
+  user: root
+  pass: root
+  comment: 'Access: SSH | Privs: Admin'

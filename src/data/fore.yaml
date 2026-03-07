@@ -1,0 +1,7 @@
+name: fore
+entries:
+- name: Generic Device
+  version: all
+  user: ''
+  pass: ''
+  comment: ''

@@ -1,0 +1,7 @@
+name: Mintel
+entries:
+- name: Mintel PBX
+  version: all
+  user: ''
+  pass: SYSTEM
+  comment: 'Privs: Admin'

@@ -1,0 +1,7 @@
+name: MachSpeed
+entries:
+- name: PC BIOS
+  version: all
+  user: ''
+  pass: sp99dd
+  comment: 'Access: Console | Privs: Admin'

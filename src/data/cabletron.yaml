@@ -1,0 +1,17 @@
+name: Cabletron
+entries:
+- name: Netgear modem/router and SSR
+  version: all
+  user: netman
+  pass: ''
+  comment: 'Privs: Admin'
+- name: Netgear modem/router
+  version: all
+  user: netman
+  pass: ''
+  comment: 'Privs: Admin'
+- name: any
+  version: any
+  user: ''
+  pass: ''
+  comment: ''

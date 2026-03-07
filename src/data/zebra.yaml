@@ -1,0 +1,7 @@
+name: Zebra
+entries:
+- name: 10/100 Print Server
+  version: all
+  user: admin
+  pass: '1234'
+  comment: 'Access: Multi | Privs: Admin'

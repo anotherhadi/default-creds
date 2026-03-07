@@ -1,0 +1,7 @@
+name: Redemo
+entries:
+- name: da
+  version: all
+  user: admin
+  pass: ''
+  comment: 'Access: HTTP | Privs: Admin'

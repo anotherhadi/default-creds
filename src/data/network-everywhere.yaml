@@ -1,0 +1,7 @@
+name: Network Everywhere
+entries:
+- name: NWR11B
+  version: all
+  user: ''
+  pass: admin
+  comment: 'Access: HTTP | Privs: Admin'

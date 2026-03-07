@@ -1,0 +1,7 @@
+name: Nurit
+entries:
+- name: PC BIOS
+  version: all
+  user: $system
+  pass: ''
+  comment: 'Access: Console | Privs: Admin'

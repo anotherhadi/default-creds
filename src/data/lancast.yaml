@@ -1,0 +1,7 @@
+name: LANCAST
+entries:
+- name: All
+  version: all
+  user: ''
+  pass: ''
+  comment: 'Privs: Admin'

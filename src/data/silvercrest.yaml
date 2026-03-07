@@ -1,0 +1,7 @@
+name: Silvercrest
+entries:
+- name: WR-6640Sg
+  version: all
+  user: admin
+  pass: admin
+  comment: 'Access: HTTP | Privs: Admin'
