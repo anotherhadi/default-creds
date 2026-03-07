@@ -1,4 +1,5 @@
 name: SAMSUNG
+icon: samsung
 entries:
 - name: Samsung AHT-E300 Multi
   version: ANY

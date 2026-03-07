@@ -1,4 +1,5 @@
 name: Debian
+icon: debian
 entries:
 - name: Linux LILO Default
   version: '2.2'

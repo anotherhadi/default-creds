@@ -1,4 +1,5 @@
 name: Cisco
+icon: cisco
 entries:
 - name: Generic Device
   version: all

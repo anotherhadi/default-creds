@@ -1,4 +1,5 @@
 name: Linux Mint
+icon: linuxmint
 entries:
 - name: Linux Mint Live session
   version: '20.2'

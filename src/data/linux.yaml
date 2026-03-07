@@ -1,4 +1,5 @@
 name: Linux
+icon: linux
 entries:
 - name: Bankmandiri.co.id
   version: all

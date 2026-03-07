@@ -1,4 +1,5 @@
 name: Cisco-Arrowpoint
+icon: cisco
 entries:
 - name: Arrowpoint
   version: all

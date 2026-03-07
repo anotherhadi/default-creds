@@ -1,4 +1,5 @@
 name: Ericsson
+icon: ericsson
 entries:
 - name: ACC
   version: all

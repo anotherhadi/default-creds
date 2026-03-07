@@ -1,4 +1,5 @@
 name: Siemens Nixdorf
+icon: siemens
 entries:
 - name: BIOS
   version: all

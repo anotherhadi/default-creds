@@ -1,4 +1,5 @@
 name: HP
+icon: hp
 entries:
 - name: E1200
   version: Network Storage Router

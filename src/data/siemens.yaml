@@ -1,4 +1,5 @@
 name: SIEMENS
+icon: siemens
 entries:
 - name: SE515
   version: all

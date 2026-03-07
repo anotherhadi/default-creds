@@ -1,4 +1,5 @@
 name: Intel
+icon: intel
 entries:
 - name: 460T Express Switch
   version: all

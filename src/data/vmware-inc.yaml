@@ -1,4 +1,5 @@
 name: VMware Inc.
+icon: vmware
 entries:
 - name: RabbitMQ
   version: all

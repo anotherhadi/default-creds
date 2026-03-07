@@ -1,4 +1,5 @@
 name: Siemens Pro C5
+icon: siemens
 entries:
 - name: Siemens
   version: all

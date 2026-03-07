@@ -1,4 +1,5 @@
 name: NETGEAR
+icon: netgear
 entries:
 - name: DG834G
   version: '3'

@@ -1,4 +1,5 @@
 name: PFSense
+icon: pfsense
 entries:
 - name: Generic Device
   version: Firewall

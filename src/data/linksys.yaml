@@ -1,4 +1,5 @@
 name: LinkSys
+icon: linksys
 entries:
 - name: WAP11
   version: all

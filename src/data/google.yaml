@@ -1,4 +1,5 @@
 name: Google
+icon: google
 entries:
 - name: Urchin
   version: ANY

@@ -1,4 +1,5 @@
 name: McAfee
+icon: mcafee
 entries:
 - name: SCM 3100
   version: '4.1'
