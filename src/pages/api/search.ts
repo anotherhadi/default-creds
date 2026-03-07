@@ -17,6 +17,17 @@ export interface CredentialEntry {
 
 let cachedData: CredentialEntry[] | null = null;
 
+// Simple Icons slugs are lowercase letters, digits, and hyphens only.
+// e.g. "cisco", "tp-link", "d-link"
+const ICON_SLUG_RE = /^[a-z0-9-]+$/;
+const FALLBACK_ICON = "";
+
+function sanitizeIcon(raw: unknown): string {
+  if (typeof raw !== "string" || raw.trim() === "") return FALLBACK_ICON;
+  const slug = raw.trim().toLowerCase();
+  return ICON_SLUG_RE.test(slug) ? slug : FALLBACK_ICON;
+}
+
 export function getAllData(): CredentialEntry[] {
   if (cachedData) return cachedData;
 
@@ -38,9 +49,21 @@ export function getAllData(): CredentialEntry[] {
 
         if (!doc || !doc.entries || !Array.isArray(doc.entries)) continue;
 
-        const manufacturerTags = doc.tags || [];
-        const manufacturerName = doc.name || "Unknown";
-        const manufacturerIcon = doc.icon || "terminal";
+        const manufacturerTags = Array.isArray(doc.tags) ? doc.tags : [];
+        const manufacturerName =
+          typeof doc.name === "string" ? doc.name : "Unknown";
+
+        const rawIcon = doc.icon;
+        const manufacturerIcon = sanitizeIcon(rawIcon);
+        if (
+          rawIcon &&
+          manufacturerIcon === FALLBACK_ICON &&
+          rawIcon !== FALLBACK_ICON
+        ) {
+          console.warn(
+            `[search] Invalid icon slug "${rawIcon}" in ${file} — falling back to "${FALLBACK_ICON}".`,
+          );
+        }
 
         for (const entry of doc.entries) {
           allResults.push({
