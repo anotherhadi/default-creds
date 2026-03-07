@@ -113,7 +113,9 @@ export const GET: APIRoute = async ({ url }) => {
 
   return new Response(
     JSON.stringify({
-      results: filtered.slice(start, start + size),
+      results: filtered
+        .slice(start, start + size)
+        .map(({ searchStr: _, ...entry }) => entry),
       pagination: {
         totalResults,
         totalPages,
