@@ -22,7 +22,7 @@
 
     default-creds = pkgs.stdenv.mkDerivation (finalAttrs: {
       pname = "default-creds";
-      version = "0.0.1";
+      version = "1.0.0";
 
       src = ./.;
 
