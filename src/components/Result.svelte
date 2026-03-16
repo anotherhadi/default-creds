@@ -1,18 +1,8 @@
 <script lang="ts">
   import { User, Lock, Check, MessageCircle } from "lucide-svelte";
+  import type { Result } from "src/types/nav";
 
-  export interface Result {
-    manufacturer: string;
-    name: string;
-    icon: string;
-    tags: string[];
-    version: string;
-    comment: string;
-    user: string;
-    pass: string;
-  }
-
-  let { result }: { result: Result } = $props();
+  let { result }: { result: Result} = $props();
 
   let copiedUser = $state(false);
   let copiedPass = $state(false);

@@ -110,7 +110,11 @@ export const GET: APIRoute = async ({ url, request }) => {
     );
   }
 
-  // Server-side tracking for search queries, respecting DNT/GPC
+  // NOTE: Server-side tracking is intentionally only triggered when DNT/GPC is active.
+  // When DNT is off, the client handles tracking via Umami's JS snippet.
+  // When DNT is on, the JS snippet is suppressed, so we fall back to server-side tracking
+  // to log search queries (query string + result count only, no user data) in order to
+  // identify missing manufacturers/products and improve the dataset.
   if (query && dnt) {
     await trackSearchServerSide(query, filtered.length);
   }

@@ -2,8 +2,13 @@
   import { Menu } from "lucide-svelte";
   import type { NavItem } from "../types/nav";
 
-  export let title: string = "";
-  export let navLinks: NavItem[] = [];
+  let {
+    title = "",
+    navLinks = [],
+  }: {
+    title?: string;
+    navLinks?: NavItem[];
+  } = $props();
 </script>
 
 <div class="bg-base-200">

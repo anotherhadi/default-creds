@@ -1,7 +1,7 @@
 <script lang="ts">
   import { onMount } from "svelte";
-  import type { Result as ResultType } from "./Result.svelte";
   import Result from "./Result.svelte";
+  import type { Result as ResultType } from "src/types/nav";
   import { Search } from "lucide-svelte";
   import DefaultView from "./DefaultView.svelte";
   import NotFoundView from "./NotFoundView.svelte";
