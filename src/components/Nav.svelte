@@ -1,13 +1,16 @@
 <script lang="ts">
   import { Menu } from "lucide-svelte";
+  import type { Snippet } from "svelte";
   import type { NavItem } from "../types/nav";
 
   let {
     title = "",
     navLinks = [],
+    action,
   }: {
     title?: string;
     navLinks?: NavItem[];
+    action?: Snippet;
   } = $props();
 </script>
 
@@ -53,7 +56,8 @@
                     <li>
                       <a href={sublink.href} class="flex items-center gap-2">
                         {#if sublink.icon}
-                          <svelte:component this={sublink.icon} size={16} />
+                          {@const Icon = sublink.icon}
+                          <Icon size={16} />
                         {/if}
                         {sublink.label}
                       </a>
@@ -64,7 +68,8 @@
             {:else}
               <a href={link.href} class="flex items-center gap-2">
                 {#if link.icon}
-                  <svelte:component this={link.icon} size={18} />
+                  {@const Icon = link.icon}
+                  <Icon size={18} />
                 {/if}
                 {link.label}
               </a>
@@ -75,7 +80,7 @@
     </div>
 
     <div class="navbar-end">
-      <slot name="action"></slot>
+      {@render action?.()}
     </div>
   </div>
 </div>

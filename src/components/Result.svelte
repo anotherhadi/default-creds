@@ -1,6 +1,6 @@
 <script lang="ts">
   import { User, Lock, Check, MessageCircle } from "lucide-svelte";
-  import type { Result } from "src/types/nav";
+  import type { Result } from "src/types/result";
 
   let { result }: { result: Result} = $props();
 
