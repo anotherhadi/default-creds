@@ -6,11 +6,13 @@ import { Search, Book, Github, User, Shield, Coffee } from "lucide-svelte";
 interface Props {
   title?: string;
   description?: string;
+  ogImage?: string;
 }
 
 const {
   title = "Default Creds",
   description = "Open-source database of default credentials for pentesters and researchers. Find factory-set passwords for any device or software.",
+  ogImage = `${Astro.site ?? "https://default-creds.hadi.diy"}/og.png`
 } = Astro.props;
 
 const myLinks = [
@@ -49,8 +51,20 @@ const umamiId = process.env.PUBLIC_UMAMI_WEBSITE_ID;
       {title === "Default Creds" ? title : `${title} | Default Creds`}
     </title>
     <meta name="description" content={description} />
+    
+    <!-- Open Graph -->
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={Astro.url} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:site_name" content="Default Creds" />
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImage} />
   </head>
   <body class="bg-base-100 min-h-screen">
     <Navbar title="Default Creds" navLinks={myLinks} client:load>
