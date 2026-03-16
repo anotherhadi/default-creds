@@ -53,8 +53,8 @@ const SECURITY_HEADERS: Record<string, string> = {
     "default-src 'self'",
     "img-src 'self' cdn.jsdelivr.net data:",
     "style-src 'self' 'unsafe-inline'",
-    "script-src 'self' 'unsafe-inline' static.cloudflareinsights.com",
-    "connect-src 'self' cloudflareinsights.com",
+    "script-src 'self' 'unsafe-inline' static.cloudflareinsights.com umami.hadi.diy",
+    "connect-src 'self' cloudflareinsights.com umami.hadi.diy",
     "frame-ancestors 'none'",
   ].join("; "),
 };
