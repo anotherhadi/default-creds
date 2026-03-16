@@ -97,8 +97,8 @@ export const GET: APIRoute = async ({ url, request }) => {
     Math.max(1, parseInt(url.searchParams.get("size") || "10")),
   );
 
-    const dnt = request.headers.get("DNT") === "1"
-           || request.headers.get("Sec-GPC") === "1";
+  const dnt = request.headers.get("DNT") === "1"
+    || request.headers.get("Sec-GPC") === "1";
 
   const allEntries = getAllData();
 
@@ -112,7 +112,7 @@ export const GET: APIRoute = async ({ url, request }) => {
 
   // Server-side tracking for search queries, respecting DNT/GPC
   if (query && dnt) {
-    await trackSearchServerSide(query, filtered.length > 0);
+    await trackSearchServerSide(query, filtered.length);
   }
 
   const totalResults = filtered.length;
@@ -141,7 +141,7 @@ export const GET: APIRoute = async ({ url, request }) => {
   );
 };
 
-async function trackSearchServerSide(query: string, hasResults: boolean) {
+async function trackSearchServerSide(query: string, results: number) {
   const umamiUrl = process.env.UMAMI_URL;
   const umamiId = process.env.UMAMI_WEBSITE_ID;
 
@@ -163,12 +163,35 @@ async function trackSearchServerSide(query: string, hasResults: boolean) {
           name: "search",
           data: {
             query,
-            hasResults,
+            results,
+            hasResults: results > 0,
             source: "server",
           },
         },
       }),
     });
+    if (results === 0) {
+      await fetch(`${umamiUrl}/api/send`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "User-Agent": "Mozilla/5.0 (compatible; default-creds-server/1.0)",
+        },
+        body: JSON.stringify({
+          type: "event",
+          payload: {
+            website: umamiId,
+            hostname: "default-creds.hadi.diy",
+            url: "/api/search",
+            name: "search_no_results",
+            data: {
+              query,
+              source: "server",
+            },
+          },
+        }),
+      });
+    }
   } catch (e) {
     console.error("Umami server-side tracking failed:", e);
   }
