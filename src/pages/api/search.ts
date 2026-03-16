@@ -89,13 +89,16 @@ export function getAllData(): CredentialEntry[] {
   return allResults;
 }
 
-export const GET: APIRoute = async ({ url }) => {
+export const GET: APIRoute = async ({ url, request }) => {
   const query = url.searchParams.get("q")?.trim().toLowerCase() || "";
   const page = Math.max(1, parseInt(url.searchParams.get("page") || "1"));
   const size = Math.min(
     50,
     Math.max(1, parseInt(url.searchParams.get("size") || "10")),
   );
+
+    const dnt = request.headers.get("DNT") === "1"
+           || request.headers.get("Sec-GPC") === "1";
 
   const allEntries = getAllData();
 
@@ -105,6 +108,11 @@ export const GET: APIRoute = async ({ url }) => {
     filtered = allEntries.filter((entry) =>
       queryTokens.every((token) => entry.searchStr.includes(token)),
     );
+  }
+
+  // Server-side tracking for search queries, respecting DNT/GPC
+  if (query && dnt) {
+    await trackSearchServerSide(query, filtered.length > 0);
   }
 
   const totalResults = filtered.length;
@@ -132,3 +140,36 @@ export const GET: APIRoute = async ({ url }) => {
     },
   );
 };
+
+async function trackSearchServerSide(query: string, hasResults: boolean) {
+  const umamiUrl = process.env.UMAMI_URL;
+  const umamiId = process.env.UMAMI_WEBSITE_ID;
+
+  if (!umamiUrl || !umamiId) return;
+
+  try {
+    await fetch(`${umamiUrl}/api/send`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "User-Agent": "Mozilla/5.0 (compatible; default-creds-server/1.0)",
+      },
+      body: JSON.stringify({
+        type: "event",
+        payload: {
+          website: umamiId,
+          hostname: "default-creds.hadi.diy",
+          url: "/api/search",
+          name: "search",
+          data: {
+            query,
+            hasResults,
+            source: "server",
+          },
+        },
+      }),
+    });
+  } catch (e) {
+    console.error("Umami server-side tracking failed:", e);
+  }
+}
