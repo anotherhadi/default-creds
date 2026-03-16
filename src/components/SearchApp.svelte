@@ -75,6 +75,9 @@
       results = data.results;
       totalPages = data.pagination.totalPages;
       totalResults = data.pagination.totalResults;
+      if (typeof window !== "undefined" && (window as any).umami) {
+        (window as any).umami.track("search", { query: lastQuery, results: totalResults });
+      }
     } catch (e) {
       console.error("Search error:", e);
       results = [];
@@ -124,7 +127,7 @@
     {:else if results.length > 0}
       <ul class="list rounded-box">
         <li class="px-4 pb-2 text-xs opacity-60 tracking-wide">
-          {totalResults} result{totalResults > 1 && "s" || ""} for the query '{cleanUserInput(
+          {totalResults} result{(totalResults > 1 && "s") || ""} for the query '{cleanUserInput(
             lastQuery,
           )}'
         </li>
@@ -152,7 +155,7 @@
         </div>
       {/if}
     {:else}
-      <NotFoundView lastQuery={lastQuery} />
+      <NotFoundView {lastQuery} />
     {/if}
   </div>
 </div>

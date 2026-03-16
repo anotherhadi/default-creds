@@ -1,0 +1,68 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Privacy Policy">
+  <main class="prose prose-invert max-w-3xl mx-auto">
+    <h1 class="text-4xl font-black uppercase tracking-tighter text-primary">Privacy Policy</h1>
+    <p class="text-base-content/50 text-sm">Last updated: March 2026</p>
+
+    <p>
+      Default Creds is a free, open-source tool for security researchers and pentesters. This page explains
+      what data is collected when you use this site and why.
+    </p>
+
+    <h2>What we collect</h2>
+    <p>
+      This site uses <a href="https://umami.is" target="_blank" class="link link-primary">Umami</a>,
+      a privacy-focused analytics tool. Umami collects the following anonymized data:
+    </p>
+    <ul>
+      <li>Pages visited</li>
+      <li>Referrer URL (where you came from)</li>
+      <li>Browser and operating system (aggregated)</li>
+      <li>Country (derived from IP, not stored)</li>
+      <li>Search queries submitted through the search interface</li>
+    </ul>
+
+    <h2>What we do NOT collect</h2>
+    <ul>
+      <li>No cookies are set — ever</li>
+      <li>No IP addresses are stored</li>
+      <li>No personal information of any kind</li>
+      <li>No cross-site tracking</li>
+      <li>No data is sold or shared with third parties</li>
+    </ul>
+
+    <h2>How anonymization works</h2>
+    <p>
+      Umami does not store IP addresses. Instead, it generates a daily rotating hash from your IP,
+      browser, and a server-side secret. This hash is used solely to distinguish unique visits within
+      a single day and cannot be reversed or linked back to you.
+    </p>
+
+    <h2>Data storage</h2>
+    <p>
+      All analytics data is stored on our own self-hosted server. No data is sent to third-party
+      analytics providers. The Umami instance is hosted at <code>umami.hadi.diy</code>.
+    </p>
+
+    <h2>Your rights</h2>
+    <p>
+      Since no personal data is collected, there is nothing to access, correct, or delete. If you
+      still have concerns, you can reach out via the contact in our
+      <a href="/.well-known/security.txt" class="link link-primary">security.txt</a>.
+    </p>
+
+    <h2>Do Not Track</h2>
+    <p>
+      Umami respects the <code>DNT</code> (Do Not Track) header. If your browser has DNT enabled,
+      no analytics data will be collected for your session.
+    </p>
+
+    <h2>Changes to this policy</h2>
+    <p>
+      If anything changes, this page will be updated with a new date at the top.
+    </p>
+  </main>
+</Layout>

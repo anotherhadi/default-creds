@@ -33,6 +33,9 @@ const myLinks = [
     ],
   },
 ];
+
+const umamiUrl = import.meta.env.PUBLIC_UMAMI_URL;
+const umamiId = import.meta.env.PUBLIC_UMAMI_WEBSITE_ID;
 ---
 
 <html lang="en">
@@ -63,4 +66,13 @@ const myLinks = [
       <slot />
     </div>
   </body>
+
+  {umamiUrl && umamiId && (
+  <script
+    defer
+    src={`${umamiUrl}/script.js`}
+    data-website-id={umamiId}
+    is:inline
+  />
+  )}
 </html>
