@@ -28,7 +28,9 @@
       <div class="stat-figure text-primary">
         <Database size={32} />
       </div>
-      <div class="stat-title uppercase tracking-widest text-xs">Manufacturers</div>
+      <div class="stat-title uppercase tracking-widest text-xs">
+        Manufacturers
+      </div>
       <div class="stat-value text-primary">{totalApps}</div>
       <div class="stat-desc">
         Add a new manufacturer <a
@@ -42,7 +44,9 @@
       <div class="stat-figure text-secondary">
         <KeyRound size={32} />
       </div>
-      <div class="stat-title uppercase tracking-widest text-xs">Credentials</div>
+      <div class="stat-title uppercase tracking-widest text-xs">
+        Credentials
+      </div>
       <div class="stat-value text-secondary">{totalPasswords}</div>
       <div class="stat-desc">
         Full list available <a
@@ -108,3 +112,4 @@
     </div>
   </div>
 </div>
+<p class="text-base-content/20 m-auto text-center text-xs"><a href="/privacy-policy">Privacy policy</a></p>

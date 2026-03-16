@@ -57,7 +57,13 @@ import Layout from "../layouts/Layout.astro";
     <h2>Do Not Track</h2>
     <p>
       Umami respects the <code>DNT</code> (Do Not Track) header. If your browser has DNT enabled,
-      no analytics data will be collected for your session.
+      no client-side analytics will be collected for your session.
+    </p>
+    <p>
+      However, when a search is performed, the query and whether it returned results are logged
+      server-side, with no user information attached (no IP, no browser, no session identifier).
+      This is used solely to identify missing manufacturers or products in the database and improve
+      the dataset.
     </p>
 
     <h2>Changes to this policy</h2>
