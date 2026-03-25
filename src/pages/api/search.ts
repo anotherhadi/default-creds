@@ -162,7 +162,7 @@ async function trackSearchServerSide(query: string, results: number) {
         type: "event",
         payload: {
           website: umamiId,
-          hostname: "default-creds.hadi.diy",
+          hostname: "default-creds.hadi.icu",
           url: "/api/search",
           name: "search",
           data: {
@@ -185,7 +185,7 @@ async function trackSearchServerSide(query: string, results: number) {
           type: "event",
           payload: {
             website: umamiId,
-            hostname: "default-creds.hadi.diy",
+            hostname: "default-creds.hadi.icu",
             url: "/api/search",
             name: "search_no_results",
             data: {

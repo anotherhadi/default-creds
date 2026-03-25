@@ -6,7 +6,7 @@ import node from "@astrojs/node";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://default-creds.hadi.diy",
+  site: "https://default-creds.hadi.icu",
   output: "server",
   vite: {
     plugins: [tailwindcss()],

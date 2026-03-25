@@ -25,9 +25,9 @@
 
 **Default Creds** is a centralized, community-driven repository of factory-set credentials. Designed for pentesters and security researchers, it helps identify weak access points during engagement phases or audit internal infrastructure before they become a security liability.
 
-**Live Instance:** [default-creds.hadi.diy](https://default-creds.hadi.diy?utm_source=github&utm_medium=readme)
+**Live Instance:** [default-creds.hadi.icu](https://default-creds.hadi.icu?utm_source=github&utm_medium=readme)
 
-**API Documentation:** [default-creds.hadi.diy/api-docs](https://default-creds.hadi.diy/api-docs?utm_source=github&utm_medium=readme)
+**API Documentation:** [default-creds.hadi.icu/api-docs](https://default-creds.hadi.icu/api-docs?utm_source=github&utm_medium=readme)
 
 ## 🎯 The Mission
 
