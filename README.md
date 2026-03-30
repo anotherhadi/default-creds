@@ -1,5 +1,5 @@
 <div align="center">
-    <img alt="logo" src="https://raw.githubusercontent.com/anotherhadi/default-creds/main/public/logo.svg" width="120px" />
+    <img alt="logo" src="./public/logo.svg" width="120px" />
 </div>
 
 <br>
@@ -84,3 +84,11 @@ bun dev
 ## ⚠️ Legal Disclaimer
 
 Usage of **Default Creds** for attacking targets without prior mutual consent is illegal. It is the end user's responsibility to obey all applicable local, state, and federal laws. Developers assume no liability and are not responsible for any misuse or damage caused by this program.
+
+---
+
+<div align="center">
+  <a href="https://github.com/anotherhadi/default-creds">github</a> |
+  <a href="https://gitlab.com/anotherhadi/default-creds">gitlab (mirror)</a> |
+  <a href="https://git.hadi.icu/anotherhadi/default-creds">gitea (mirror)</a>
+</div
