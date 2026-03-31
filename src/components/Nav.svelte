@@ -1,17 +1,34 @@
 <script lang="ts">
-  import { Menu } from "lucide-svelte";
+  import { Search, Book, Github, User, Shield, Menu } from "lucide-svelte";
   import type { Snippet } from "svelte";
-  import type { NavItem } from "../types/nav";
 
   let {
-    title = "",
-    navLinks = [],
     action,
   }: {
     title?: string;
-    navLinks?: NavItem[];
     action?: Snippet;
   } = $props();
+
+  const navLinks = [
+    { label: "Search", href: "/", icon: Search },
+    { label: "API", href: "/api-docs", icon: Book },
+    {
+      label: "More",
+      children: [
+        {
+          label: "Source code",
+          href: "https://github.com/anotherhadi/default-creds",
+          icon: Github,
+        },
+        {
+          label: "Passwords list",
+          href: "https://github.com/anotherhadi/default-creds/blob/main/src/data",
+          icon: Shield,
+        },
+        { label: "About me", href: "https://hadi.icu", icon: User },
+      ],
+    },
+  ];
 </script>
 
 <div class="bg-base-200">
@@ -31,17 +48,37 @@
                 <span>{link.label}</span>
                 <ul class="p-2">
                   {#each link.children as sublink}
-                    <li><a href={sublink.href}>{sublink.label}</a></li>
+                    <li>
+                      <a href={sublink.href} class="flex items-center gap-2">
+                        {#if sublink.icon}
+                          {@const Icon = sublink.icon}
+                          <Icon size={12} />
+                        {/if}
+                        {sublink.label}
+                      </a>
+                    </li>
                   {/each}
                 </ul>
               {:else}
-                <a href={link.href}>{link.label}</a>
+                <a href={link.href} class="flex items-center gap-2">
+                  {#if link.icon}
+                    {@const Icon = link.icon}
+                    <Icon size={12} />
+                  {/if}
+                  {link.label}
+                </a>
               {/if}
             </li>
           {/each}
         </ul>
       </div>
-      <a href="/" class="btn btn-ghost text-xl">{title}</a>
+      <a
+        href="/"
+        class="btn btn-ghost text-xl flex justify-center gap-4 items-center"
+      >
+        <img src="/logo.svg" class="m-auto h-6" alt="iky logo" />
+        <img src="/logo-large.svg" class="m-auto h-6" alt="iky logo large" />
+      </a>
     </div>
 
     <div class="navbar-center hidden lg:flex">
@@ -57,7 +94,7 @@
                       <a href={sublink.href} class="flex items-center gap-2">
                         {#if sublink.icon}
                           {@const Icon = sublink.icon}
-                          <Icon size={16} />
+                          <Icon size={12} />
                         {/if}
                         {sublink.label}
                       </a>
@@ -69,7 +106,7 @@
               <a href={link.href} class="flex items-center gap-2">
                 {#if link.icon}
                   {@const Icon = link.icon}
-                  <Icon size={18} />
+                  <Icon size={14} />
                 {/if}
                 {link.label}
               </a>
