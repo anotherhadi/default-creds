@@ -89,6 +89,6 @@ Usage of **Default Creds** for attacking targets without prior mutual consent is
 
 <div align="center">
   <a href="https://github.com/anotherhadi/default-creds">github</a> |
-  <a href="https://gitlab.com/anotherhadi/default-creds">gitlab (mirror)</a> |
+  <a href="https://gitlab.com/anotherhadi_mirror/default-creds">gitlab (mirror)</a> |
   <a href="https://git.hadi.icu/anotherhadi/default-creds">gitea (mirror)</a>
 </div
