@@ -1,0 +1,18 @@
+name: Tomcat
+icon: apachetomcat
+entries:
+- name: Tomcat Manager
+  version: all
+  user: tomcat
+  pass: tomcat
+  comment: 'Access: Web Manager UI'
+- name: Tomcat Manager
+  version: all
+  user: tomcat
+  pass: s3cret
+  comment: 'Access: Web Manager UI'
+- name: Tomcat Manager
+  version: all
+  user: admin
+  pass: admin
+  comment: 'Access: Web Manager UI'

@@ -1,0 +1,8 @@
+name: Redis
+icon: redis
+entries:
+- name: Redis
+  version: all
+  user: ''
+  pass: ''
+  comment: 'Access: Any | No authentication by default'
