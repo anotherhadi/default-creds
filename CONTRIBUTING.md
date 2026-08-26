@@ -6,7 +6,7 @@ First off, thank you for considering contributing to **Default Creds**! By organ
 
 1. **Fork** the repository.
 2. Create a **new branch** for your addition (`git checkout -b add-[manufacturer-name]`).
-3. Add or update the YAML file in the `src/data/` directory.
+3. Add or update the YAML file in the `data/` directory.
 4. **Validate** your YAML structure (see the schema below).
 5. Commit your changes and **open a Pull Request**.
 
@@ -21,7 +21,7 @@ To keep the database consistent, we use a **Manufacturer-First** approach. Each 
 
 ### Template
 
-If the manufacturer file doesn't exist, create it in `src/data/`. If it exists, simply add your product to the `entries` list.
+If the manufacturer file doesn't exist, create it in `data/`. If it exists, simply add your product to the `entries` list.
 
 ```yaml
 name: "Manufacturer Name" # Full name of the brand
